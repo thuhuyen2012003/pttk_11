@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THU</title>
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        .main-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            background-color: #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu li a:hover {
+            background-color: #c0c0c0;
+        }
+
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f0f0f0;
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        .menu ul li {
+            margin: 0;
+        }
+
+        .menu ul li a {
+            padding: 10px;
+            background-color: #d0d0d0;
+        }
+
+        .menu ul li a:hover {
+            background-color: #b0b0b0;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(0, 0, 255);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li>
+                    <a href="#">Cập Nhật</a>
+                    <ul>
+                        <li><a href="idex.html">Cầu thủ</a></li>
+                        <li><a href="quy.html">Quỹ</a></li>
+                    </ul>
+                </li>
+                <li><a href="thu.html">Thu</a></li>
+                <li><a href="chi.html">Chi</a></li>
+            </ul>
+        </div>
+        <div class="content" id="content">
+            <div class="container">
+                <h1>THU</h1>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Số áo</th>
+                                <th>Ngày thu</th>
+                                <th>Giờ thu</th>
+                                <th>Lý do</th>
+                                <th>Số tiền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>23</td>
+                                <td>2024-04-12</td>
+                                <td>9.00h</td>
+                                <td>Mua áo</td>
+                                <td>185.000 VND</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>2024-04-21</td>
+                                <td>20.00h</td>
+                                <td>Thuê sân</td>
+                                <td>50.000 VND</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
